@@ -60,4 +60,13 @@ public class Read_file {
 		}
 	}
 	
+	public ArrayList<String> readFileByCara() {
+		for(int i = 0; i < this.contentFile.size(); i++) {
+			for(int j = 0; j < this.contentFile.get(i).length() ;j++) {
+				this.contentFilePal.add(Character.toString(this.contentFile.get(i).charAt(j)));
+			}
+		}
+		return contentFilePal;
+	}
+	
 }
